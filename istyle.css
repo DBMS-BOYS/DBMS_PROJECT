@@ -1,0 +1,313 @@
+body{
+    margin: 0px;
+}
+.container{
+    position: relative;
+}
+.nav{
+    height: 3.5em;
+    width: 93em;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+.navbar{
+    padding-top: 1em;
+    float: top;
+}
+.style{
+    float: left;
+    padding-left: 2em;
+    padding-top: 0px;
+}
+.style>a{
+    text-decoration: none;
+    transition: color 0.5s;
+    color: rgb(66, 61, 61);
+    font-weight: bold;
+    font-size: large;
+}
+.style>a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(203, 27, 27);
+}
+.logout{
+    float: left;
+    padding-left: 67em;
+    padding-top: 0px;
+}
+.logout>a{
+    text-decoration: none;
+    transition: color 0.5s;
+    color: rgb(66, 61, 61);
+    font-weight: bold;
+    font-size: large;
+}
+.logout>a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(203, 27, 27);
+}
+.drop{
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+}
+.dropd{
+    position: relative;
+    display: inline-block;
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop-down a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-down a:hover {background-color: #ddd;}
+
+.dropd:hover .drop-down {display: block;}
+
+.i{
+    opacity: 0.7;
+}
+.primary-text{
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    color: black;
+    font-size: 3em;
+    font-weight: 900;
+}
+.enter{
+    position: absolute;
+    height: 200px;
+    width: 1200px;
+    background-color: white;
+    margin-left: 125px;
+    border-radius: 3px;
+}
+.pinfo{
+    position: relative;
+    /* padding-top: 20px; */
+    /* margin-left: 550px; */
+    background: rgb(49, 48, 48);
+    height: 1300px;
+    width: 1470px;
+    /* border-radius: 20px; */
+}
+.pbox1{
+    float: left;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+.pbox2{
+    float: right;
+    padding-top: 100px;
+    padding-right: 120px;
+}
+.pbox3{
+    position: absolute;
+    float: left;
+    padding-top: 100px;
+    padding-left: 500px;
+}
+.sub{
+    padding-top: 150px;
+    padding-left:1080px;
+}
+.sbtn{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    border: transparent;
+    border-radius: 6px;
+}
+.ibox{
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px 0;
+
+}
+.prop{
+    position: absolute;
+    margin-top: 197px;
+    margin-left: 125px;
+    background: rgba(255, 254, 254, 0.944);
+    height: 250px;
+    width: 1200px;
+}
+.cim{
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 100px;
+}
+
+.c{
+    font-size: 20px;
+}
+.cp{
+    font-size: 20px;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+.ts{
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 350px;
+}
+.t{
+    font-size: 20px;
+}
+.tl{
+    padding-left: 45px;
+    font-size: 20px;
+    padding-top: 100px;
+}
+.co{
+    position: absolute;
+}
+.n{
+    padding-left: 660px;
+    font-size: 20px;
+}
+.no{
+    font-size: 20px;
+    padding-top: 3px;
+    padding-left: 700px;
+}
+.to{
+    position: absolute;
+}
+.tc{
+    padding-left: 950px;
+    font-size: 20px;
+}
+.tnc{
+    font-size: 20px;
+    padding-left: 940px;
+}
+.pdisp{
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 90px;
+    margin-left: 20px;
+}
+.bill{
+    position: absolute;
+    background-color: white;
+    margin-top: 500px;
+    margin-left: 240px;
+    padding-left: 40px;
+    height: 250px;
+    width: 920px;
+    border-radius: 10px;
+}
+.tab{
+    border-collapse:collapse ;
+}
+.tsi{
+    height: 50px;
+    width: 170px;
+}
+.bi{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(77, 224, 109);
+    border-radius: 12px;
+    border: none;
+}
+.bt{
+    padding-top: 15px;
+    padding-left: 800px;
+}.py{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.pay{
+    position: absolute;
+    margin-top: 730px;
+    margin-left: 240px;
+    background-color: white;
+    height: 315px;
+    width: 960px;
+    border-radius: 10px;
+}
+.tab1{
+    border-collapse:collapse ;
+    margin-left: 36px;
+    margin-top: 20px;
+}
+.bt1{
+    padding-top: 15px;
+    padding-left: 747px;
+}
+.term{
+    margin-top: 90px;
+    height: 50px;
+    width: 1469px;
+    background-color: rgb(65, 61, 61);
+}
+.ter{
+    padding-left: 670px;
+    padding-top: 15px;
+}
+.ter1{
+    color: rgb(213, 220, 220);
+    text-decoration: none;
+}
+.inst{
+    padding-top: 0px;
+    padding-left: 30px;
+}
+.inst1{
+    color:rgb(213, 220, 220) ;
+    text-decoration: none;
+}
+.ibox1{
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px 0;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.l1{
+    margin-left: 130px;
+}
+.pa1{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+.fol1{
+    position: absolute;
+    height: 80px;
+    width: 1470px;
+    margin-top: 1220px;
+    background-color: white;
+}
+.ter{
+    padding-top: 0px;
+    margin-left: 7px;
+    color: black;
+
+}
+.fol2{
+    color: black;
+    margin-left: 550px;
+}
