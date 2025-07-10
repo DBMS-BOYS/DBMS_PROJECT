@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lstyle.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="hero">
+        <!-- <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700380604.jpg" alt=""> -->
+        <div class="form-box" >
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="domestic()">Domestic</button>
+                <button type="button" class="toggle-btn" onclick="industry()">Industry</button>
+                <button type="button" class="toggle-btn" onclick="admin()">Admin</button>
+            </div>
+            <form action="" class="input-group" id="domlogin">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box" id="chk"><label for="chk">Remember password</label>
+                <button type="submit" class="submit-btn" onclick="window.open('profile.html')">Login</button>
+            </form>
+            <form action="" class="input-group" id="indlogin">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box" id="chk"><label for="chk">Remember password</label>
+                <button type="submit" class="submit-btn" onclick="window.open('industry_user_interface.html')">Login</button>
+            </form>
+            <form action="" class="input-group" id="admlogin">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box" id="chk"><label for="chk">Remember password</label>
+                <button type="submit" class="submit-btn"  onclick="window.open('admin_user_interface.html')">Login</button>
+            </form>
+        </div>
+    </div>
+    <!--need to add validation-->
+    <!--select a good background image and work on that-->
+    <script>
+        var w = document.getElementById("domlogin");
+        var x = document.getElementById("indlogin");
+        var y = document.getElementById("admlogin");
+        var z  = document.getElementById("btn");
+        function industry(){
+            
+
+            w.style.left = "-500px";
+            x.style.left = "50px";
+            y.style.left="550px";
+            z.style.left="120px";
+        }
+        function domestic(){
+            w.style.left = "50px";
+            x.style.left = "550px";
+            y.style.left="1150px";
+            z.style.left="0px";
+        }
+        function admin(){
+            w.style.left="-550px";
+            x.style.left="550px";
+            y.style.left="40px";
+            z.style.left="240px";
+        }
+    </script>
+</body>
+</html>

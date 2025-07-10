@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rstyle.css">
+    <script>
+        function director(){
+        var val = document.getElementById("t_of_use").value;
+        if(val=="Domestic"){
+            window.open("Domestic.html");
+        }
+        else{
+            window.open("Industry.html");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div>
+    </div>
+    <div class="form-box-2">
+        <form action="" >
+            <input type="text" class="input-field" placeholder="First Name"><br>
+            <input type="text" class="input-field" placeholder="Last Name"><br>
+            <input type="text" class="input-field" placeholder="Email Id"><br>
+            <input type="password" class="input-field" placeholder="Enter Password"><br>
+            <input type="password"  class="input-field" placeholder="Confirm Password"><br>
+            <div>
+                <p class="p">Select type of user : <select name="type_of_user" id="t_of_use" value="Select type of user">
+                    <option value="Select">Select</option>
+                    <option value="Domestic">Domestic</option>
+                    <option value="Indstrial">Industry</option>
+                </select></p>
+            </div>
+            <div>
+                <br>
+                <input type="checkbox" class="check-box">
+                <label for="check-box">I accept</label>
+            </div>
+            <button type='submit'class='submit-btn-2' onclick="director()">Register</button>
+        </form>
+    </div>
+</body>
+</html>
