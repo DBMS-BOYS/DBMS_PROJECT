@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="ustyle.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    
+</head>
+<body>
+    <!-- Navbar top -->
+
+    <div class="navbar-top " id="navbar-top">
+        <div class="title">
+            <h1>Van Rock Water Management System</h1>
+        </div>
+
+        <!-- Navbar -->
+        <ul>
+            <li class="togglenitch" onclick="toggletoggle() " style="margin-right:20px; margin-top:-3px">
+                
+                    <img src="darkmode.jpg" style=" width:45px ; height:45px" alt="nightmode">
+                               
+
+            </li>
+            <li>
+<!-------------------------------------------- LOGIN PAGE LINK HERE--------------------------------------------------------------------------------------------->
+                <a href="login.html">
+                    <i class="fa fa-sign-out-alt fa-2x"></i>
+                </a>
+            </li>
+
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="https://wallpapercave.com/dwp1x/wp11337646.jpg" alt="" width="100" height="100">
+
+            <div class="name">
+                HARECHARAN
+            </div>
+            <div class="job">
+                HOUSE DIVISION
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url" onclick="switchblock1()">
+                <a href="#profile" class="active">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url" onclick="switchblock2()">
+                <a href="#settings">Settings</a>
+                <hr align="center">
+            </div>
+            <div class="url" onclick="switchblock3()">
+                <a href="#request">Request </a>
+                <hr align="center">
+            </div>
+            <div class="url"  >
+                <a href="Invoice.html">Bill</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Main -->
+    
+    <div class="main1" id="details">
+        <h2 id="profile">DETAILS </h2>
+        <div class="card " >
+            <div class="card-body">
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td>HARECHARAN</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>harecharan321@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>No 53, L N NAGAR ,<br> Nehru nagar west , Kalapatti Road<br> Coimbatore</td>
+                        </tr>
+                        <tr>
+                            <td>Type of consumer</td>
+                            <td>:</td>
+                            <td>Household/Domestic</td>
+                        </tr>
+                        <tr>
+                            <td>Water allocated</td>
+                            <td>:</td>
+                            <td>5500l/month</td>
+                        </tr>
+                        <tr>
+                            <td>Amount Due:</td>
+                            <td>:</td>
+                            <td>0 ₹</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        
+    </div>
+    <!-- End -->
+    
+        <div class="main1" id="settings"  style="display:none" >
+            <h2 id="settings">SETTINGS</h2>
+            <div class="card" >
+                <div class="card-body" >
+                    
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name" placeholder="John"><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lname">Email:</label>
+
+                                </td>
+                                <td>
+                                    <input type="email" id="Email" name="Email" placeholder="abc@xyz.com"><br><br>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="address">Address</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="add" name="add1" placeholder="house no"><br>
+                                    <input type="text" id="add" name="add2" placeholder="street name"><br>
+                                    <input type="text" id="add" name="add3" placeholder="city"><br>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Submit">
+                        
+                    </form>
+                </div>
+            </div>
+            
+    
+            
+        </div>
+
+        
+        <!-- <div class="main1" id="request" style="display:none">
+            <h2 id="request">Request</h2>
+            <div class="card" >
+                <div class="card-body" >
+                  
+                    <form class="formalign">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">REQUEST FOR: </label>
+                                </td>
+                                <td>
+                                    <select name="requestselect" id="requestselect" placeholder="select one">
+                                        <option value="value0">Select one</option>
+                                        <option value="value1">WATER ALLOCATION</option>
+                                        <option value="value2">REPORT WATER CONTAMINATION</option>
+                                        <option value="value3">REQUEST PREVIOUS BILLS</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lname">Email:</label>
+
+                                </td>
+                                <td>
+                                    <input type="email" id="Email" name="Email" placeholder="abc@xyz.com"><br><br>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="address">Address</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="add" name="add1" placeholder="house no"><br>
+                                    <input type="text" id="add" name="add2" placeholder="street name"><br>
+                                    <input type="text" id="add" name="add3" placeholder="city"><br>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <input class="submitbutton"  type="submit" value="Submit">
+                        
+                    </form>
+                </div>
+            </div> -->
+
+            
+        <div class="main2" id="request" style="display:none; background-color: rgb(232, 245, 255)">
+
+            <div class="dropdown" >
+                <button class="dropbtn">Request</button>
+                <div class="dropdown-content">
+                  <a  onclick="switchreq1()">CHANGE IN WATER ALLOCATION AMOUNT</a>
+                  <a  onclick="switchreq2()">REQUEST FOR PREVIOUS YEAR BILLS</a>
+                  <a  onclick="switchreq3()">FEEDBACK REGARDING QUALITY OF WATER</a>
+                </div>
+            </div>
+            <div class="card1"  style="display:none; background-color: rgb(232, 245, 255);" id="reqdiv1">
+                <div class="card-body" >
+                    
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">Reason for Change in water allocation amount:</label>
+                                </td>
+                                <td>
+                                    <select name="s1" id="s1" aria-placeholder="select one" class="rforr"> Select One 
+                                        <option value="0" style="color: gray;">Select One</option>
+                                        <option value="1">Summer Season</option>
+                                        <option value="2"> Relatives are home</option>
+                                        <option value="3">Unexpected damage to pipeline</option>
+                                        <option value="4"> Any other</option>                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lname">If any other give reason</label>
+
+                                </td>
+                                <td>
+                                    <input type="email" id="Email" name="Email" placeholder="Not necessary if u have given a valid reason"><br><br>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="address">Select Water amount</label>
+                                </td>
+                                <td>
+                                    <option value="0" style="color: gray;">Select One</option>
+                                    <option value="1">500 </option>
+                                    <option value="2"> 600</option>
+                                    <option value="3">700</option>
+                                    <option value="4"> 800</option>
+                                    <option value="1">900 </option>
+                                    <option value="2"> 1000</option>
+                                    <option value="3">1100</option>
+                                    <option value="4"> 1200</option>
+                                    <option value="1">1300 </option>
+                                    <option value="2"> 1400</option>
+                                    <option value="3">1500</option>
+                     
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Submit">
+                        
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="card1" style="display: none; background-color: rgb(232, 245, 255);" id="reqdiv2">
+
+                <div class="card-body" >
+                    
+                    <form>
+                        <table border="1">
+                            <tr>
+                                <td class="td25">Reason for request</td>
+                                <td class="td75"><select name="s1" id="s1" aria-placeholder="select one" class="rforr"> Select One 
+                                    <option value="0" style="color: gray;">Select One</option>
+                                    <option value="1">Taxation purpose</option>
+                                    <option value="2"> Statistic comparision</option>
+                                    <option value="3">Proof of residency</option>
+                                    <option value="4"> Any other</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td class="td25">Bill Mode</td>
+                                <td class="td75">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> HardCopy </label><br>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> Email With Signature </label><br>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> Fax </label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td25">Select te Years</td>
+                                <td class="td75">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2021 </label><br>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2020 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2019 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2018 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2017 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2016 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2015 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2014 </label><br> 
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2013 </label><br>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> 2012 </label><br> 
+                                    
+                            </tr>
+                            
+                            
+
+                        </table>
+                        <h6 style="color:gray ; font-weight:100">Note: Monthly bill are only available for the current year, for more contact Harethegreat@gmail.com</h6>
+                    </form>
+                    <input type="submit" value="Submit">
+
+                </div>
+
+            </div>
+            <div  class="card1" style="display: none; background-color: rgb(232, 245, 255);" id="reqdiv3"  >
+                <div class="card-body" >
+                    <h3> FEEDBACK</h3>
+                    <div>&nbsp</div>
+                    <div>
+                       <input type="text" style="width: 1000px; height:350px ; text-align:center    " placeholder="Type your worries/suggestions/comments here">
+                    </div>
+                    <input type="submit" value="Submit">
+                </div>
+
+            </div>
+            
+        </div>
+
+        
+          <div class="main1" id="bill" style="display:none">
+            <h2 id="bill">BILL</h2>
+            <div class="card" >
+                <div class="card-body" >
+                    
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name" placeholder="John"><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lname">Email:</label>
+
+                                </td>
+                                <td>
+                                    <input type="email" id="Email" name="Email" placeholder="abc@xyz.com"><br><br>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="address">Address</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="add" name="add1" placeholder="house no"><br>
+                                    <input type="text" id="add" name="add2" placeholder="street name"><br>
+                                    <input type="text" id="add" name="add3" placeholder="city"><br>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Submit">
+                        
+                    </form>
+                </div>
+            </div>
+            
+    
+            
+        </div>  
+</body>
+<script>
+    function switchblock1()  {
+    var x = document.getElementById("details");
+    var y = document.getElementById("settings");
+    var z= document.getElementById("bill")
+    var zz=document.getElementById("request")
+    x.style.display="block"
+    y.style.display="none"
+    z.style.display="none"
+    zz.style.display="none"
+    document.getElementById("settings").style.backgroundColor="rgb(102, 202, 227)" ;
+    document.getElementById("details").style.backgroundColor="rgba(78, 78, 78, 0.31);";
+    document.getElementById("request").style.backgroundColor="rgba(78, 78, 78, 0.31);" ;
+    document.getElementById("bill").style.backgroundColor="rgba(78, 78, 78, 0.31);";
+}
+function switchblock2()  {
+    var x = document.getElementById("details");
+    var y = document.getElementById("settings");
+    var z= document.getElementById("bill");
+    var zz=document.getElementById("request");
+    x.style.display="none";
+    y.style.display="block";
+    z.style.display="none"
+    zz.style.display="none"
+    document.getElementById("settings").style.backgroundColor="rgba(78, 78, 78, 0.31);" ;
+    document.getElementById("details").style.backgroundColor="rgb(102, 202, 227)";
+    document.getElementById("request").style.backgroundColor="rgba(78, 78, 78, 0.31);" ;
+    document.getElementById("bill").style.backgroundColor="rgba(78, 78, 78, 0.31);";
+}
+function switchblock3()  {
+    var x = document.getElementById("details");
+    var y = document.getElementById("settings");
+    var z= document.getElementById("bill")
+    var zz=document.getElementById("request")
+    x.style.display="none"
+    y.style.display="none"
+    z.style.display="none"
+    zz.style.display="block"
+    document.getElementById("settings").style.backgroundColor="rgba(78, 78, 78, 0.31);" ;
+    document.getElementById("details").style.backgroundColor="rgba(78, 78, 78, 0.31);";
+    document.getElementById("request").style.backgroundColor="rgb(102, 202, 227)" ;
+    document.getElementById("bill").style.backgroundColor="rgba(78, 78, 78, 0.31);";
+}
+/*function switchblock4()  {
+    var x = document.getElementById("details");
+    var y = document.getElementById("settings");
+    var z= document.getElementById("bill")
+    var zz=document.getElementById("request")
+    x.style.display="none"
+    y.style.display="none"
+    z.style.display="block"
+    zz.style.display="none"
+    document.getElementById("settings").style.backgroundColor="rgba(78, 78, 78, 0.31);" ;
+    document.getElementById("details").style.backgroundColor="rgba(78, 78, 78, 0.31);";
+    document.getElementById("request").style.backgroundColor="  rgba(78, 78, 78, 0.31);" ;
+    document.getElementById("bill").style.backgroundColor="rgb(102, 202, 227)";
+
+}*/
+function switchreq1(){
+    var x = document.getElementById("reqdiv1");
+    var y = document.getElementById("reqdiv2");
+    var z= document.getElementById("reqdiv3");
+    x.style.display="block";
+    y.style.display="none";
+    z.style.display="none";
+}
+function switchreq2(){
+    var x = document.getElementById("reqdiv1");
+    var y = document.getElementById("reqdiv2");
+    var z= document.getElementById("reqdiv3");
+    x.style.display="none"
+    y.style.display="block";
+    z.style.display="none";
+}
+function switchreq3(){
+    var x = document.getElementById("reqdiv1");
+    var y = document.getElementById("reqdiv2");
+    var z= document.getElementById("reqdiv3");
+    x.style.display="none";
+    y.style.display="none";
+    z.style.display="block";
+}
+
+function toggletoggle(){
+    var element = document.getElementById("navbar-top")
+    element.classList.toggle("toggleclass")
+}
+
+</script>
+
+</html>
+

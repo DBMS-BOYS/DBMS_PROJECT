@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #6699cc;
+  background-image: linear-gradient(rgba(18, 214, 27, 0.75),rgba(0,0,0,0.75)) , url(https://wallpaperaccess.com/full/1700222.jpg);
+  background-image: linear-gradient();
+}
+
+.container h1 {
+  color: white;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.registartion-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: sans-serif;
+  background: transparent;
+  padding: 20px;
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+}
+
+.registartion-form .submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.registartion-form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) , url(https://wallpaperaccess.com/full/1700222.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Domestic User Registration Form</h1>
+    <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+      <table>
+        <tr>
+          <td><label for="name">Property Name:</label></td>
+          <td><input type="text" name="name" id="name" placeholder="Enter Property Name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="text" name="email" id="email" placeholder="your email"></td>
+        </tr>
+        <tr>
+          <td><label for="phoneNumber">Phone Number:</label></td>
+          <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+        </tr>
+        <tr>
+          <td><label for="state">State:</label></td>
+          <td> <select name="" id="drop-down">
+            <option value="Select">Select State</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="NCR">Delhi-NCR</option>
+            <option value="Other">Other</option>td>
+        </tr>
+        
+        <tr>
+          <td><label for="sector">Sector</label></td>
+          <td>
+            <select name="sector" id="sec">
+              <option value="">Select sector</option>
+              <option value="primary">Primary</option>
+              <option value="secondary">Secondary</option>
+              <option value="tertiary">Tertiary</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="type">Type of Property</label></td>
+          <td>
+            <select name="type" id="props">
+              <option value="">Type of property</option>
+              <option value="apart">Apartment</option>
+              <option value="indiv">Individual House</option>
+              <option value="large">Large</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="zipcode">Zip Code:</label></td>
+          <td><input type="number" name="zipcode" id="zipcode"></td>
+        </tr>
+        <tr>
+          <td><label for="about">About:</label></td>
+          <td><textarea name="about" id="about" placeholder="Write about your surroundings..."></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="name">Average Consumption:</label></td>
+            <td><input type="text" name="name" id="name" placeholder="Enter your average consumption:"></td>
+          </tr>
+        <tr>
+          <td colspan="2"><input type="submit" class="submit" value="Register" onclick="window.open('profile.html')"/></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>
