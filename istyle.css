@@ -28,8 +28,25 @@ body{
     font-size: large;
 }
 .style>a:hover{
-    color: rgb(65, 195, 176);
+    color: rgb(0, 0, 0);
     border-bottom: 3px solid rgb(203, 27, 27);
+}
+.logout{
+    float: left;
+    padding-left: 67em;
+    padding-top: 0px;
+}
+.logout>a{
+    text-decoration: none;
+    transition: color 0.5s;
+    color: rgb(66, 61, 61);
+    font-weight: bold;
+    font-size: large;
+}
+.logout>a:hover{
+    color: rgb(0, 0, 0);
+    color: rgb(65, 195, 176);
+
 }
 .drop{
     border: none;
@@ -65,46 +82,12 @@ body{
 .primary-text{
     position: absolute;
     top: 300px;
-    left: 700px;
-    color: black;
-    font-size: 3em;
-    font-weight: 900;
-    align-items: center;
-}
-.pinfo{
-    padding-top: 20px;
-    margin-left: 550px;
-    background: rgb(72, 68, 68);
-    height: 400px;
-    width: 470px;
-    border-radius: 20px;
-}
-.pbox1{
-    float: left;
-    padding-top: 50px;
-    padding-left: 80px;
-}
-.pbox2{
-    float: right;
-    padding-top: 60px;
-    padding-right: 95px;
-}
-.pbox3{
-    float: left;
-    padding-top: 60px;
-    padding-left: 120px;
 }
 .ibox{
     border-width: 1px;
     border-radius: 5px;
     padding: 7px;
     margin: 5px 0;
-}
-
-.cim{
-    position: absolute;
-    padding-top: 0px;
-    padding-left: 250px;
 }
 
 .c{
@@ -114,48 +97,22 @@ body{
     font-size: 20px;
     padding-top: 100px;
 }
-.ts{
-    position: absolute;
-}
-.t{
-    position: absolute;
-    padding-left: 550px;
-    padding-top: 0px;
-    font-size: 20px;
-}
-.tl{
-    
-    font-size: 20px;
-    padding-top: 100px;
-    padding-left: 540px;
-}
 .co{
     position: absolute;
 }
 .n{
-    position: absolute;
-    padding-left: 790px;
-    padding-top: 0px;
     font-size: 20px;
 }
 .no{
     font-size: 20px;
-    padding-top: 0px;
-    padding-left: 830px;
 }
 .to{
     position: absolute;
 }
 .tc{
-    position: absolute;
-    padding-left: 1020px;
-    padding-top: 0px;
     font-size: 20px;
 }
 .tnc{
-    font-size: 20px;
-    padding-top: 0px;
-    padding-left: 1000px;
 }
 .pdisp{
     position: absolute;
@@ -165,8 +122,6 @@ body{
 }
 .bill{
     position: absolute;
-    padding-top: 380px;
-    padding-left: 320px;
 }
 .tab{
     border-collapse:collapse ;
@@ -188,23 +143,10 @@ body{
 }
 .bt{
     padding-top: 15px;
-    padding-left: 710px;
-}.py{
-    padding-top: 590px;
-    padding-left: 320px;
     font-size: 20px;
     font-weight: bold;
 }
 .pay{
-    padding-top: 40px;
-}
-.tab1{
-    border-collapse:collapse ;
-    margin-left: 400px;
-}
-.bt1{
-    padding-top: 15px;
-    padding-left: 940px;
 }
 .term{
     margin-top: 90px;
